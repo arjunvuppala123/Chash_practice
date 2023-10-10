@@ -45,6 +45,68 @@ This section demonstrates both implicit and explicit type conversions:
 - Implicit conversion: A `byte` variable `b` is assigned the value `1`, which is implicitly converted to an `int` variable `i`.
 - Explicit conversion: A string `s` containing `"10"` is converted to an `int` using both `Convert.ToInt32` and `int.Parse` methods.
 
-## Try-Catch Block <a name="try-catch-block"></a>
+# C# Operators Documentation
 
-The program includes a `try` block to demonstrate error handling. It attempts to convert the string `"1234"` to a `byte` using `Convert.ToByte`. Since this conversion is not
+This documentation provides an overview and explanation of the C# code that demonstrates various types of operators, including arithmetic, logical, conditional, and prefix/postfix operators.
+
+## Table of Contents
+
+1. [Introduction](#introduction)
+2. [Arithmetic Operators](#arithmetic-operators)
+3. [Logical Operators](#logical-operators)
+4. [Conditional Operators](#conditional-operators)
+5. [Prefix and Postfix Operators](#prefix-and-postfix-operators)
+
+---
+
+## Introduction <a name="introduction"></a>
+
+The C# program provided demonstrates the use of various types of operators, including arithmetic, logical, conditional, and prefix/postfix operators. It showcases how these operators work and how to use them in C#.
+
+## Arithmetic Operators <a name="arithmetic-operators"></a>
+
+In this section, the program demonstrates arithmetic operators on two floating-point numbers `x` and `y`:
+
+- Addition: `x + y`
+- Division: `x / y`
+- Multiplication: `x * y`
+- Subtraction: `x - y`
+
+The program calculates and prints the results of these operations.
+
+## Logical Operators <a name="logical-operators"></a>
+
+This section illustrates logical operators used to compare the values of `x` and `y`:
+
+- Greater than: `x > y`
+- Less than: `x < y`
+- Equal To: `x == y`
+- Not Equal to: `x != y`
+
+The program evaluates these conditions and prints the results as `true` or `false`.
+
+## Conditional Operators <a name="conditional-operators"></a>
+
+Here, the program demonstrates conditional operators:
+
+- AND operator (`&&`): `x > 0 && y > 0`
+- OR operator (`||`): `x > 0 || y > 0`
+- NOT operator (`!`): `!(x > 0 && y > 0)`
+
+The program evaluates these conditional expressions and prints the results as `true` or `false`.
+
+## Prefix and Postfix Operators <a name="prefix-and-postfix-operators"></a>
+
+This section showcases the use of prefix and postfix operators on the variable `x`:
+
+- Prefix Operator (`++x`): Increments `x` by 1 before using its current value.
+- Postfix Operator (`x++`): Uses the current value of `x` and then increments it by 1.
+
+The program prints the values of `x` before and after applying these operators to demonstrate the difference between them.
+
+---
+
+This C# program provides practical examples of various operators used in the language, including arithmetic, logical, conditional, and prefix/postfix operators. It serves as a useful reference for understanding how these operators work in C#.
+
+
+
