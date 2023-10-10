@@ -1,5 +1,6 @@
 ﻿namespace HelloWorld
 {
+
     class Program
     {
         static void Main(string[] args)
@@ -100,6 +101,14 @@
             Console.WriteLine();
             Console.WriteLine("-------------------------------------------------------------");
             Console.WriteLine();
+
+            //classes
+            Person person1 = new Person("Arjun", 20);
+            person1.PrintInfo();
+
+            //static class
+            var result = Calculator.Add(1, 2);
+            Console.WriteLine(result);
         }
     }
 }
