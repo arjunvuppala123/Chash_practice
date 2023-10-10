@@ -65,6 +65,41 @@
             Console.WriteLine(i);
             Console.WriteLine(j);
             Console.WriteLine(k);
+
+            Console.WriteLine();
+            Console.WriteLine("-------------------------------------------------------------");
+            Console.WriteLine();
+
+            // operators
+            Console.WriteLine("Operators");
+
+            var x = 10f;
+            var y = 20f;
+
+            //arithmetric operators
+            Console.WriteLine("addition: " + (x + y));
+            Console.WriteLine("division: " + (x / y));
+            Console.WriteLine("multiplication: " + (x * y));
+            Console.WriteLine("subtraction: " + (x/y));
+
+            //logical operators
+            Console.WriteLine("Greater than: " + (x > y));
+            Console.WriteLine("Less than: " + (x < y));
+            Console.WriteLine("Equal To: " + (x == y));
+            Console.WriteLine("Not Equal to: " + (x != y));
+
+            //conditional operators
+            Console.WriteLine("AND operator: " + (x > 0 && y > 0));
+            Console.WriteLine("OR operator: " + (x > 0 || y > 0));
+            Console.WriteLine("NOT Operator: " + !(x > 0 && y > 0));
+
+            //prefix and postfix operators
+            Console.WriteLine("Prefix Operator, ++x: " + (++x));
+            Console.WriteLine("Postfix Operator, x++: " + (x++));
+
+            Console.WriteLine();
+            Console.WriteLine("-------------------------------------------------------------");
+            Console.WriteLine();
         }
     }
 }
