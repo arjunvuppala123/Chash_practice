@@ -12,7 +12,7 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            /* Console.WriteLine("Hello World!");
             // Console.Beep();
 
             Console.WriteLine("-------------------------------------------------------------");
@@ -187,8 +187,148 @@ namespace HelloWorld
 
             var methodName = "Delivered";
             var deliveryStatus = (DeliveryStatus)Enum.Parse(typeof(DeliveryStatus), methodName);
-        
+
             Console.WriteLine(deliveryStatus);
+
+            Console.WriteLine();
+            Console.WriteLine("-------------------------------------------------------------");
+            Console.WriteLine();
+
+            //control structures
+            Console.WriteLine("Control Structures");
+
+            //if else
+            Console.WriteLine("If-Else");
+            Console.Write("Enter the hour: ");
+            int hour = int.Parse(Console.ReadLine());
+
+            if (hour > 10)
+            {
+                Console.WriteLine("Afternoon");
+            }
+            else
+            {
+                Console.WriteLine("Morning");
+            }
+
+            // if-else if - else
+            Console.WriteLine("If-Else If-Else");
+            Console.Write("Enter the hour: ");
+            hour = int.Parse(Console.ReadLine());
+
+            if (hour > 0 && hour < 12)
+            {
+                Console.WriteLine("Morning");
+            }
+            else if (hour >= 12 && hour < 18)
+            {
+                Console.WriteLine("Afternoon");
+            }
+            else
+            {
+                Console.WriteLine("Evening");
+            }
+
+            // switch case
+            Console.WriteLine("Switch Case");
+            Console.Write("Enter your selection (1 or 2): ");
+            int selection = int.Parse(Console.ReadLine());
+
+            switch (selection)
+            {
+                case 1:
+                    Console.WriteLine("First");
+                    break;
+                case 2:
+                    Console.WriteLine("Second");
+                    break;
+                default:
+                    Console.WriteLine("Default");
+                    break;
+            }
+
+            // conditional operator
+            Console.WriteLine("Conditional Operator");
+            Console.Write("Are you a gold customer? (true or false): ");
+            bool isGoldCustomer = bool.Parse(Console.ReadLine());
+            string boolResult = isGoldCustomer == true ? "Gold" : "Silver";
+
+            Console.WriteLine(boolResult); */
+            /* Console.WriteLine("Enter a number:");
+            var number = int.Parse(Console.ReadLine());
+
+            if (number >= 1 && number <= 10){
+                Console.WriteLine("Valid Number");
+            }
+            else{
+                Console.WriteLine("Invalid Number");
+            }
+
+            Console.WriteLine("Enter two numbers: ");
+            Console.WriteLine("Number1: ");
+            var number1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Number 2: ");
+            var number2 = int.Parse(Console.ReadLine());
+
+            var isGreater = number1 > number2 ? "Number 1 is greater" : "Number 2 is greater.";
+            Console.WriteLine(isGreater);
+            
+            Console.WriteLine("width: ");
+            var width = float.Parse(Console.ReadLine());
+            Console.WriteLine("height: ");
+            var height = float.Parse(Console.ReadLine());
+
+            var result = height > width ? "Potrait" : "Landscape";
+            Console.WriteLine(result);
+
+            Console.WriteLine("Enter speed limit");
+            var speedLimit = float.Parse(Console.ReadLine());
+            Console.WriteLine("Enter speed of car:");
+            var carSpeed = float.Parse(Console.ReadLine());
+
+            if (carSpeed <= speedLimit){
+                Console.WriteLine("OK");
+            }
+
+            var diff = carSpeed - speedLimit;
+            var points = diff/5;
+
+            if (points > 12){
+                Console.WriteLine("License Suspended");
+            }
+            else{
+                var intPoints = (int)points;
+                Console.WriteLine(intPoints);
+            } */
+            //iterations
+            /* Console.WriteLine("ForEach iteration");
+            var myArray = new int[3]{0,1,2};
+            foreach (var item in myArray)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine("For Loop");
+            for (int i = 0; i < myArray.Length; i++){
+                Console.WriteLine(myArray[i]);
+            }
+            Console.WriteLine("while loop");
+            int x = 0;
+            while(x < myArray.Length){
+                Console.WriteLine(myArray[x]);
+                x++;
+            }
+            int y = 0;
+            Console.WriteLine("do while");
+            do
+            {
+                Console.WriteLine(myArray[y]);
+                y++;
+            } while (y < myArray.Length); */
+            var random = new Random();
+            Console.WriteLine("random number" + "rand no with range: " + "random alphabet");
+            for (var i=0;i<10;i++){
+                Console.WriteLine(random.Next() + " " + random.Next(1,20) + " " + (char)random.Next(97,122));
+            }
         }
     }
 }
