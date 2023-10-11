@@ -11,7 +11,7 @@ namespace HelloWorld
         }
     
         public void PrintInfo(){
-            Console.WriteLine("Name is " + name + " and age is " + age + "years old.");
+            Console.WriteLine("Name is " + name + " and age is " + age + " years old.");
         }
     }
 }
