@@ -1,6 +1,4 @@
-﻿using System.Security.Cryptography.X509Certificates;
-
-namespace HelloWorld
+﻿namespace HelloWorld
 {
     public enum DeliveryStatus
     {
@@ -10,6 +8,14 @@ namespace HelloWorld
     }
     class Program
     {
+        /* public static int Factorial(int a)
+        {
+            if (a == 0 || a == 1){
+                return 1;
+            }
+            return a*Factorial(a-1);
+        } */
+
         static void Main(string[] args)
         {
             /* Console.WriteLine("Hello World!");
@@ -324,11 +330,77 @@ namespace HelloWorld
                 Console.WriteLine(myArray[y]);
                 y++;
             } while (y < myArray.Length); */
-            var random = new Random();
+            /* var random = new Random();
             Console.WriteLine("random number" + "rand no with range: " + "random alphabet");
             for (var i=0;i<10;i++){
                 Console.WriteLine(random.Next() + " " + random.Next(1,20) + " " + (char)random.Next(97,122));
+            } */
+            /* var no = 0;
+            for (int i = 1; i <= 100; i++){
+                if (i%3 == 0){
+                    Console.WriteLine(i);
+                    no++;
+                }
             }
+            Console.WriteLine(no); */
+            /* var sum = 0;
+            while(true){
+                Console.WriteLine("Enter any number you want (type ok for exit)?");
+                var input = Console.ReadLine();
+                if (input == "ok"){
+                    Console.Beep();
+                    break;
+                }
+                sum += int.Parse(input);
+            }
+            Console.WriteLine(sum); */
+            /* int result = Factorial(5);
+            Console.WriteLine("Factorial of 5: "+ result); */
+            /* var random = new Random();
+            var num = random.Next(1,10);
+            var i = 0;
+            Console.WriteLine("Let's play a game.");
+            Console.WriteLine("You have 4 turns. guess the number.");
+            while(i<4){
+                var number = int.Parse(Console.ReadLine());
+                if (number == num){
+                    Console.WriteLine("U got it!");
+                    break;
+                }
+                i++;
+            }
+            if (i >= 4){
+                Console.WriteLine("You lost! The number was: " + num);
+            } */
+            /* var dateTime = new DateTime(2015, 1, 1);
+            var now = DateTime.Now;
+            var today = DateTime.Today;
+
+            Console.WriteLine("hour: " + now.Hour);
+            Console.WriteLine("minute: " + now.Minute);
+            Console.WriteLine("hour: " + today);
+            Console.WriteLine("hour: " + dateTime);
+
+            var tommorow = now.AddDays(1);
+            var yesterday = now.AddDays(-1);
+
+            Console.WriteLine("hour: " + tommorow.Day);
+            Console.WriteLine("minute: " + tommorow.ToLongDateString());
+            Console.WriteLine("minute: " + tommorow.ToShortDateString());
+            Console.WriteLine("lol: " + yesterday.ToLongTimeString());
+            Console.WriteLine("lol: " + yesterday.ToShortTimeString());
+            Console.WriteLine("lol: " + now.ToString("dd mm yyyy")); */
+            /* var timespan = new TimeSpan(1,2,3);
+
+            var timespan1 = new TimeSpan(1,0,0);
+            var timespan2 = TimeSpan.FromHours(1);
+
+            Console.WriteLine(timespan + " " + timespan1 + " " + timespan2);
+            var start = DateTime.Now;
+            var end = DateTime.Now.AddMinutes(2);
+            var duration = end - start;
+            Console.WriteLine("Duration: " + duration);      */
+               
         }
     }
 }
