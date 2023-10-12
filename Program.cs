@@ -400,7 +400,62 @@
             var end = DateTime.Now.AddMinutes(2);
             var duration = end - start;
             Console.WriteLine("Duration: " + duration);      */
-               
+/*             
+            //arrays
+            var numbers = new[] {3,5,9,2,14,1};
+
+            // Console.WriteLine("Length: " + numbers.Length);
+
+            var index = Array.IndexOf(numbers, 9);
+            // Console.WriteLine("Index of 9: " + index);
+
+            // Array.Clear(numbers, 0, 2);
+            // foreach (var item in numbers)
+            // {
+            //     Console.WriteLine(item);
+            // }
+
+            int[] another = new int[numbers.Length];
+            Array.Copy(numbers, another, numbers.Length);
+
+            // foreach (var item in another)
+            // {
+            //     Console.WriteLine(item);
+            // }
+
+            Array.Sort(numbers);
+            // foreach (var item in numbers)
+            // {
+            //     Console.WriteLine(item);
+            // }
+            Array.Reverse(numbers);
+            foreach (var item in numbers)
+            {
+                Console.WriteLine(item);
+            } */
+
+            //lists 
+            var numbers = new List<int>() {1,2,3,4};
+
+            numbers.Add(1);
+            numbers.AddRange(new int[3]{5,6,7});
+            
+            foreach (var num in numbers){
+                Console.WriteLine(num);
+            }
+
+            var index = numbers.IndexOf(1);
+            Console.WriteLine("Index of 1: " + index);
+
+            var lastIndex = numbers.LastIndexOf(1);
+            Console.WriteLine("Last Index of 1: " + lastIndex);
+
+            Console.WriteLine("Count: " + numbers.Count);
+
+            numbers.Remove(1);
+            foreach (var num in numbers){
+                Console.WriteLine(num);
+            }
         }
     }
 }
